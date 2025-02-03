@@ -105,3 +105,77 @@ Once the cleaning is complete, we can begin analyzing:
 - **Most common reasons for bus delays.**
 - **Patterns in delay times across bus companies and boroughs.**
 - **Trends in breakdowns and delays based on days of the week.**
+
+# 🚍 NYC School Bus Delays - Data Analysis & Insights
+
+## 📌 Project Overview
+
+As a **Data Analyst** for the **New York Division of Transportation**, my goal is to improve the efficiency and reliability of NYC’s bus system. With a growing number of bus breakdowns and delays, commuters are facing significant challenges, and the city’s transportation resources are being strained. 
+
+Using a dataset of bus delays, I conducted an analysis to uncover patterns and key factors contributing to these delays. The insights from this project will help shape strategic decisions aimed at improving public transit efficiency. 
+
+---
+
+## 🔍 Key Questions & Insights
+
+### 1️⃣ What are the most common reasons for delays and breakdowns?
+- **Approach:**
+  - Used the **Reason** and **Reason Type** columns to create a **Pivot Table** counting occurrences of each reason.
+  - Created a **bar chart** for a clearer visual representation.
+- **Findings:**
+  - The top reason for delays is **Heavy Traffic**.
+  - The second most common reason is **Other**, which lacks specificity.
+- **Recommendations:**
+  - Further breakdown of the **Other** category is needed to improve reporting accuracy.
+  - Since **Heavy Traffic** is the top issue, strategies like optimized bus lanes and schedule adjustments should be explored.
+
+---
+
+### 2️⃣ How do delay times vary by bus company and borough?
+- **Approach:**
+  - Created a **Pivot Table** using **Bus Company Name** and the calculated **Low & High Delay Estimate** columns.
+  - Used **Conditional Formatting** to highlight above-average delay times.
+  - Filtered by **borough** to identify regional trends.
+- **Findings:**
+  - **Manhattan, Queens, and Staten Island** had above-average delays in both low and high estimates.
+  - The **low delay average** across all boroughs was **~30 minutes**, while the **high delay average** was **~45 minutes**.
+  - **23 out of 54 bus companies (43%) had consistently above-average delays.**
+- **Recommendations:**
+  - Focus on boroughs with higher delays for targeted interventions like increased bus frequency or route optimization.
+  - Investigate high-delay bus companies for potential inefficiencies and policy improvements.
+
+---
+
+### 3️⃣ Is there a correlation between specific days of the week and the frequency of breakdowns or delays?
+- **Approach:**
+  - Created a **Pivot Table** using the **Day of the Week** column and counted incident reports for each weekday.
+  - Generated a **line chart** to visualize trends.
+- **Findings:**
+  - **Monday** had the highest number of incidents.
+  - **Friday** had the lowest number of incidents.
+  - **Monday through Thursday** averaged **~5300 incidents per day**, indicating a consistent pattern.
+- **Recommendations:**
+  - Higher incidents on Mondays may indicate operational challenges after weekends, such as maintenance backlogs.
+  - Conducting preventative maintenance over the weekend could help reduce Monday delays.
+  - Further analysis of time-of-day patterns could provide additional insights into peak breakdown periods.
+
+---
+
+## 📊 Conclusion
+
+This analysis provides valuable insights into the primary factors affecting NYC bus delays and breakdowns. Addressing heavy traffic delays, optimizing schedules in high-delay boroughs, and implementing preventative maintenance for high-risk days can significantly improve transit reliability.
+
+By leveraging data-driven insights, the **New York Division of Transportation** can make informed decisions to enhance the public transit experience and improve overall operational efficiency. 🚍📈
+
+---
+
+## 🛠️ Technologies Used
+- **Microsoft Excel** (Pivot Tables, Conditional Formatting, Data Cleaning & Analysis)
+- **Data Visualization** (Bar Charts, Line Charts)
+
+## 🚀 Next Steps
+- Further analyze time-of-day breakdowns to understand peak delay periods.
+- Investigate bus company-specific operational challenges.
+- Propose actionable solutions for traffic mitigation and route optimization.
+
+
